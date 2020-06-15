@@ -41,3 +41,18 @@ Here's a working example using cURL:
 Browser is also fine:
 
 `http://localhost:3000/admin/report`
+
+##### API
+The routing is listed below; its functionality is evident. Parameters are mostly passed via JSON.
+
+POST:
+* /admin/discount/frequency
+* /admin/discount/code
+* /customer/login
+* /customer/purchase
+* /customer/puchase?discount=<code>
+
+GET:
+* /admin/report 
+
+
