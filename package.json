@@ -1,0 +1,25 @@
+{
+  "name": "symetra-ecommerce",
+  "version": "1.0.0",
+  "description": "assessment",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vasukesan/symetra-ecommerce.git"
+  },
+  "author": "vasukesan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vasukesan/symetra-ecommerce/issues"
+  },
+  "homepage": "https://github.com/vasukesan/symetra-ecommerce#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "chai": "^4.2.0",
+    "express": "^4.17.1",
+    "mocha": "^8.0.1"
+  }
+}
