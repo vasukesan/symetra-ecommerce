@@ -15,8 +15,6 @@ let storeData = {
 app.use(express.json()) 
 
 
-//routing below
-
 //admin updates frequency
 app.post('/admin/discount/frequency', function (req, res) {
   n = req.body.discountFrequency
@@ -32,7 +30,7 @@ app.post('/admin/discount/frequency', function (req, res) {
 //admin updates discount code
 app.post('/admin/discount/code', function (req, res) {
   storeData.discountCode = req.body.discountCode
-  return res.json({'discountCode': storeData.discountCode }
+  return res.json({discountCode: storeData.discountCode }
   );
 })
 
@@ -75,8 +73,8 @@ app.post('/customer/purchase', function (req, res) {
 //admin gets report 
 app.get('/admin/report', function (req, res) {
   res.json( {
-    'totalPurchases': storeData.purchaseCount,
-    'totalDiscounts': storeData.discountCount
+    totalPurchases: storeData.purchaseCount,
+    totalDiscounts: storeData.discountCount
   });
 })
 

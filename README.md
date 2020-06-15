@@ -1,13 +1,13 @@
 ### At a glance
 * All requirements from requirements.docx are implemented. 
 * app.js is the server/API. I used Express, since it is the de facto standard for these kinds of projects. 
-* client.js is the client. I used axios for the HTTP requests, since the requirement of this exercise was building the API, not the client side. 
+* client.js is the client. I used axios for the HTTP requests.
 * test.js contains testing code. I used Mocha and Chai for testing. 
 * No GUI.
 
 ### Functionality to be added
-* Handling user error more gracefully. This server only works using the "happy path". Anything else may require a server restart. 
-* No HTTPS
+* Handling user error more gracefully. This server will handle basic things like status codes, but is mostly designed for the "happy path".
+* HTTPS
 * Turning off the discount code by the admin. I added a boolean to make it trivial, but it is not accessible. 
 * Authentication
 * GUI
@@ -32,9 +32,12 @@ node app.js
 
 ##### To run the tests
 npm test
-Alternatively, here's a working example using cURL:
 
-curl --header "Content-Type: application/json" --request POST --data '{"username":"dummy user"}' http://localhost:3000/customer/login
+##### Other request options
+Here's a working example using cURL:
 
-Browser is viable too:
-http://localhost:3000/admin/report
+`curl --header "Content-Type: application/json" --request POST --data '{"username":"dummy user"}' http://localhost:3000/customer/login`
+
+Browser is also fine:
+
+`http://localhost:3000/admin/report`
