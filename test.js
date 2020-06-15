@@ -1,7 +1,5 @@
 const constants = require('./constants');
 var expect  = require('chai').expect;
-var assert = require('assert');
-const client = require('./client');
 const axios = require('axios')
 const equal = 'equal'
 const status = 'status'
